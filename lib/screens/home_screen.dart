@@ -21,8 +21,8 @@ class _HomeScreenState extends State<HomeScreen> {
         AndroidNotificationDetails("Notifications Sony", "Zain",
         enableVibration: true,
           playSound: true,
-          priority: Priority.high,
-          importance: Importance.high,
+          priority: Priority.max,
+          importance: Importance.max,
           color: Colors.pink,
 
           channelShowBadge: true,
@@ -50,7 +50,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
     await notificationsPlugin.show(
         0, "Hi First Notifications"," I hope great going " , notificationDetails);
-
 
 
   }
