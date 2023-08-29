@@ -5,7 +5,7 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_local_notifications_App/screens/home_screen.dart';
 
 
-FlutterLocalNotificationsPlugin _notificationsPlugin=FlutterLocalNotificationsPlugin();
+FlutterLocalNotificationsPlugin notificationsPlugin=FlutterLocalNotificationsPlugin();
 
 
 
@@ -27,7 +27,7 @@ void main() async {
   InitializationSettings(android: androidInitializationSettings,
   iOS: darwinInitializationSettings);
 
-  bool? initialized= await _notificationsPlugin.initialize(initializationSettings);
+  bool? initialized= await notificationsPlugin.initialize(initializationSettings);
   log("Notifications : $initialized");
 
   runApp(const MyApp());
